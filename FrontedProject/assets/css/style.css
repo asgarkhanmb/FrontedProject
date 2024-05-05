@@ -2,11 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: Hind, sans-serif;
     overflow-x: hidden;
+
 }
 
 
@@ -201,7 +203,7 @@ header nav.main_menu ul li ul.drop_down_menu a::before {
 
 header nav.main_menu ul li ul.drop_down_menu a:hover {
     color: var(--color-light, #ffffff);
-    background-color: rgb(0, 255, 123);
+    background-color: rgb(19, 83, 243);
 }
 
 header nav.main_menu ul li ul.drop_down_menu a:hover::before {
@@ -337,3 +339,163 @@ header .toggle-btn.toggle span {
 header a.try_free {
     white-space: nowrap;
 }
+
+/* main hisse */
+
+
+section.card {
+    padding-top: 15rem;
+    padding-bottom: 250px;
+    background: var(--gray-color, #edeef3);
+
+
+}
+
+section.card .card_custom_shape img.circle {
+    top: 16%;
+    left: 5%;
+
+    animation: 5s linear 0s infinite alternate none running rotate;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+section.card .card_custom_shape img.semicircle {
+    bottom: 29%;
+    left: 0px;
+}
+
+section.card .card_custom_shape img.dots {
+    right: 0px;
+    bottom: 38%;
+}
+
+section.card .article_wrapper {
+    padding-top: 2rem;
+    
+}
+
+section.card .article.article {
+    padding: 0px 1rem 0px 4rem;
+    
+}
+
+article.article h3 {
+    font-size: 3.1rem;
+    line-height: 1;
+    font-weight: 600;
+    display: block;
+    
+}
+
+section.card .article.banner_article p {
+    font-size: 1.2rem;
+    padding-right: 8rem;
+    margin-bottom: 2rem;
+}
+
+section.card .card_thumb_wrapper img {
+    z-index: -1;
+    
+}
+
+section.card .card_thumb_wrapper img.dot-square {
+    bottom: -3%;
+    left: -5%;
+    animation: 3s linear 0s infinite alternate none running upDown;
+
+}
+
+@keyframes upDown {
+    100% {
+        bottom: 14%;
+    }
+}
+
+section.card .card_thumb_wrapper img.fill_circle {
+    top: -8%;
+    right: 12%;
+}
+
+section.card .card_thumb_wrapper img.stroke_circle {
+    right: 0px;
+    bottom: -15%;
+}
+
+section.card .card_thumb_wrapper .card_big {
+    margin-right: 1.8rem;
+}
+
+section.card .card_thumb_wrapper .card_big figure {
+    border-radius: 2.5rem 4px 2.5rem 4px;
+    overflow: hidden;
+}
+
+section.card .card_thumb_wrapper.small-img {
+    width: 72%;
+}
+
+section.card .card_thumb_wrapper .small-img figure {
+    margin-top: 4rem;
+    overflow: hidden;
+    border-radius: 4px 2.5rem 4px 2.5rem;
+}
+
+section.card .card_thumb_wrapper .animation {
+    right: 5%;
+    bottom: 12%;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.3rem;
+    background: var(--color-light, #fff);
+    box-shadow: var(--shadow);
+    animation: 2.5s ease 0s infinite normal none running bounce;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+
+    40% {
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -o-transform: translateY(-15px);
+    }
+}
+
+section.card .card_thumb_wrapper .animation h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+section.card .card_thumb_wrapper .animation span {
+    font-size: 15px;
+}
+
