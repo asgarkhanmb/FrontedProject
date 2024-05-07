@@ -20,6 +20,7 @@
 body {
     font-family: Hind, sans-serif;
     overflow-x: hidden;
+
 }
 
 img {
@@ -143,7 +144,7 @@ header {
 
 header.sticky {
     position: fixed;
-    top: 0px;
+    top: 20px;
     left: 0px;
     width: 100%;
     background: var(--color-light, #ffffff);
@@ -765,18 +766,491 @@ article.article h3 {
 #course .course_banner_item.one {
     background-image: url("../images/backroundimg1.jpg");
     margin-right: 0.5rem;
-  }
-  
-  #course .course_banner_item.two {
+}
+
+#course .course_banner_item.two {
     background-image: url("../images/backroundimg2.jpg");
     margin-left: 0.5rem;
-  }
-  
-  #course .course_banner_item.two {
+}
+
+#course .course_banner_item.two {
     padding: 2px 30px 0px;
-  }
-  
-  #course .course_banner_item.two .course_banner_thumb {
+}
+
+#course .course_banner_item.two .course_banner_thumb {
     width: 300px;
-  }
-  
+}
+
+
+
+
+
+#coursemain {
+    background: var(--gray-color);
+    margin-top: 100px;
+}
+
+#coursemain .article.article h3 {
+    font-size: 2.5rem;
+    margin-top: 105px;
+}
+
+#coursemain .course_categories_filter_menu {
+    flex-wrap: wrap;
+}
+
+#coursemain .course_categories_filter_menu .li {
+    color: var(--color);
+    cursor: pointer;
+
+}
+
+#coursemain .course_categories_filter_menu .li:not(:last-child) {
+    margin-right: 145px;
+}
+
+#coursemain .course_categories_filter_menu li.active,
+#coursemain .course_categories_filter_menu li:hover {
+    color: var(--primary-color, #2b4eff);
+}
+
+#coursemain .course_categories_filter_menu .li .span {
+    top: -115%;
+    left: 80%;
+    font-size: 13px;
+    color: var(--color-light, #fff);
+    padding: 0px 5px;
+    background: var(--primary-color, #2b4eff);
+    border-radius: 0.25rem;
+    box-shadow: var(--shadow);
+}
+
+#coursemain .course_categories_filter_menu .li .span::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 8px;
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+    border-style: solid;
+    border-width: 10px 10px 0px 0px;
+    border-color: var(--primary-color, #2b4eff) transparent transparent transparent;
+}
+
+#coursemain .course_card {
+    transform-origin: bottom center;
+}
+
+#coursemain .course_card_item {
+    background: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: var(--shadow);
+}
+
+#coursemain .course_card_item .course_card_header {
+    overflow: hidden;
+}
+
+#coursemain .yellowbg {
+    bottom: -6px;
+    left: -10px;
+    z-index: 2;
+    animation: 3s linear 0s infinite normal none running yellowBg;
+    margin-top: 45px;
+}
+
+@keyframes yellowBg {
+    0% {
+        width: 0px;
+    }
+
+    15% {
+        width: 100%;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    90% {
+        width: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 0px;
+        opacity: 0;
+    }
+}
+
+#coursemain .course_card_item:hover .course_card_header img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+
+}
+
+#coursemain .course_card_header img {
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+
+}
+
+#coursemain .course_card_header .course_tag {
+    top: 20px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#coursemain .course_card_header .course_tag span {
+    padding: 0px 5px;
+    border-radius: 0.25rem;
+    background: var(--primary-color, #2b4eff);
+}
+
+#coursemain .course_card_body,
+#coursemain .course_card_footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#coursemain .course_card_body {
+    padding-top: 1.5rem;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+#coursemain .course_card_body .course_lesson_and_rating {
+    color: rgb(80, 79, 79);
+    margin-bottom: 1rem;
+}
+
+#coursemain .course_card_body .course_lesson_and_rating i.fas.fa-star {
+    color: #ff9c43;
+}
+
+#coursemain .course_card_body h3.course_name {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+#coursemain a {
+    color: var(--color, #0e1133);
+}
+
+#coursemain a:hover,
+#coursemain h3.course_name:hover a {
+    color: var(--primary-color, #2b4eff);
+}
+
+#coursemain .course_card_body .course_instructor figure {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0px;
+    margin-right: 1rem;
+    width: 33px;
+    border: 2.5px solid var(--color-light, #fff);
+    box-shadow: var(--shadow);
+}
+
+#coursemain .course_card_body .course_instructor {
+    margin-bottom: 1rem;
+}
+
+#coursemain .course_card_body .instructor_name a {
+    color: rgb(68, 68, 68);
+}
+
+#coursemain .course_card_item .course_card_footer {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+#coursemain .course_card_item .course_card_footer .current_amount {
+    font-size: 1.2rem;
+    color: var(--primary-color, #2b4eff);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#coursemain .course_card_footer a.view_all i:last-child {
+    right: -19px;
+}
+
+#coursemain .course_card_footer a.view_all:hover i:first-child {
+    right: -19px;
+    z-index: 3;
+}
+
+
+
+#event {
+    background: var(--color-light, #fff);
+}
+
+#event article.article h3 {
+    font-size: 2.6rem;
+    margin-top: 110px;
+}
+
+#event .yellowbg {
+    bottom: -2px;
+    left: -6px;
+    z-index: -1;
+    animation: 3s linear 0s infinite normal none running yellowBg;
+    margin-top: 45px;
+}
+
+@keyframes yellowBg {
+    0% {
+        width: 0px;
+    }
+
+    15% {
+        width: 100%;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    90% {
+        width: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 0px;
+        opacity: 0;
+    }
+}
+
+#event .event_bg_shape {
+    left: 28%;
+}
+
+#event .row {
+    position: relative;
+    z-index: 2;
+}
+
+#event .event_item {
+    box-shadow: var(--shadow);
+    padding: 2rem 2.2rem;
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+    background: var(--color-light, #fff);
+}
+
+#event .event_item:before {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: -3px;
+    width: 60px;
+    height: 0;
+    z-index: -1;
+    border-radius: 0.5rem;
+    background: var(--primary-color, #2b4eff);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#event .event_item.fill::before,
+#event .event_item:hover::before {
+    top: 5;
+    bottom: auto;
+    height: 100%;
+}
+
+#event .event_item .event_time_and_date {
+    font-size: 14px;
+    color: #777;
+}
+
+#event .event_item .event_time_and_date span {
+    padding-right: 8px;
+}
+
+#event .event_item .event_time_and_date span.br:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    width: 1px;
+    height: 70%;
+    background: #777;
+}
+
+#event .event_item h3.event_name {
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+
+#event .event_item h3.event_name:hover a {
+    color: var(--primary-color, #2b4eff);
+}
+
+#event .event_item a.view_all i:first-child {
+    z-index: 1;
+}
+
+#event .event_item a.view_all:hover i:first-child {
+    right: -19px;
+}
+
+#event .event_item a.view_all i:last-child {
+    right: -19px;
+}
+
+
+
+#pricing {
+    padding: 100px 0 16rem;
+    background: var(--color-light, #fff);
+}
+
+#pricing .yellowbg {
+    bottom: -6px;
+    left: -6px;
+    z-index:1;
+    animation: 3s linear 0s infinite normal none running yellowBg;
+    margin-top: 45px;
+    position: relative;
+}
+
+@keyframes yellowBg {
+    0% {
+        width: 0px;
+    }
+
+    15% {
+        width: 100%;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    90% {
+        width: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 0px;
+        opacity: 0;
+    }
+}
+
+#pricing .nav.nav-pills,
+#pricing article.article {
+    width: max-content;
+    margin: 0 auto;
+}
+
+#pricing .nav.nav-pills {
+    border: 2px solid var(--gray-color, #edeef3);
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+#pricing .nav.nav-pills li button {
+    padding: 0.4rem 1rem;
+    border-radius: 0;
+}
+
+#pricing .pricing_card {
+    padding: 3rem;
+    background: #e9edf7;
+    width: 50%;
+    margin: 0 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.pricing_cards.tab-content>.active {
+    display: flex;
+}
+
+#pricing .pricing_card .pricing_card_header {
+    border-bottom: 1px solid #c3c3c3;
+}
+
+#pricing .pricing_card .pricing_card_header h4,
+h3.price {
+    font-weight: 600;
+}
+
+#pricing .pricing_card .pricing_card_header h3.price {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+#pricing .pricing_card .pricing_card_header h3.price sub {
+    font-size: initial;
+    font-weight: normal;
+    margin-left: -1rem;
+}
+
+#pricing .pricing_card ul.pricing_card_featured {
+    padding: 1.5rem 0 2.5rem;
+}
+
+#pricing .pricing_card ul.pricing_card_featured li {
+    margin: 0.5rem 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#pricing .pricing_card ul.pricing_card_featured li:hover {
+    color: #09c128;
+}
+
+#pricing .pricing_card ul.pricing_card_featured li i {
+    color: #09c128;
+    margin-right: 0.5rem;
+}
+
+#pricing .pricing_card.dimond a.try_free {
+    background: transparent;
+}
+
+#pricing .pricing_card.dimond a.try_free:hover {
+    background: var(--primary-color, #2b4eff);
+}
+
+#pricing .pricing_card.dimond span.best_sell {
+    top: 5%;
+    right: -3%;
+    background: var(--secondary-color);
+    padding: 2px 7px;
+    color: #fff;
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+#pricing .pricing_card.dimond span.best_sell::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 15px solid #f2277e;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+}
