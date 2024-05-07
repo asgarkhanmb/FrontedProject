@@ -86,13 +86,13 @@ button {
     }
 }
 
-a.try_free {
+a.try-free {
     padding: 0.8rem 1.5rem;
     background: var(--primary-color, #455ef9);
 }
 
-a.try_free:hover,
-a.try_free:focus {
+a.try-free:hover,
+a.try-free:focus {
     background: var(--primary-color, #455ef9);
     border-color: var(--primary-color, #455ef9);
     box-shadow: var(--shadow, 0 10px 20px 0 rgba(4, 23, 118, 0.3)) !important;
@@ -164,21 +164,21 @@ a {
     z-index: 3;
 }
 
-header .header_left a.logo {
+header .header-left a.logo {
     margin-top: 10px;
 }
 
-header .header_left a.logo figure {
+header .header-left a.logo figure {
     width: 114px;
     height: 46px;
     margin: 0;
 }
 
-header .header_category {
+header .header-category {
     padding-left: 56px;
 }
 
-header .header_category::before {
+header .header-category::before {
     content: "";
     position: absolute;
     top: -7px;
@@ -188,19 +188,19 @@ header .header_category::before {
     background: rgb(206, 206, 206);
 }
 
-header .header_category li ul.drop_down_menu li>a:hover,
-header ul li.drop_down_btn:hover>a {
+header .header-category li ul.drop-down-menu li>a:hover,
+header ul li.drop-down-btn:hover>a {
     fill: var(--primary-color, #2b4eff);
     color: var(--primary-color, #2b4eff);
 
 }
 
-header .header_category .header_category-icon {
+header .header-category .header-category-icon {
     width: 15px;
     margin-right: 10px;
 }
 
-header ul li ul.drop_down_menu {
+header ul li ul.drop-down-menu {
     left: 0px;
     width: 200px;
     background: var(--color-light, #fff);
@@ -211,62 +211,62 @@ header ul li ul.drop_down_menu {
     z-index: 9;
 }
 
-header ul li ul.category_drop_down_menu {
+header ul li ul.category-drop-down-menu {
     top: calc(100% + 30px);
     padding: 17px 0px 15px;
     border-radius: 4px;
 }
 
-header ul li ul.drop_down_menu li a {
+header ul li ul.drop-down-menu li a {
     width: 100%;
 }
 
-header .header_category li ul.drop_down_menu li>a {
+header .header-category li ul.drop-down-menu li>a {
     padding: 3px 30px;
     color: rgb(109, 110, 117);
     font-weight: 500;
     text-transform: capitalize;
 }
 
-header li.drop_down_btn:hover ul.drop_down_menu {
+header li.drop-down-btn:hover ul.drop-down-menu {
     top: 100%;
     visibility: visible;
     opacity: 1;
 }
 
-header .header_right nav.main_menu {
+header .header-right nav.main-menu {
     width: 50%;
 }
 
-header .header_right nav.main_menu ul {
+header .header-right nav.main-menu ul {
     padding: 0px;
 }
 
-header .header_right nav.main_menu ul span {
+header .header-right nav.main-menu ul span {
     font-size: 0.6rem;
     vertical-align: text-top;
 }
 
-header .header_right nav.main_menu ul a:not(.drop_down_menu a) {
+header .header-right nav.main-menu ul a:not(.drop-down-menu a) {
     padding: 35px 0px;
 }
 
-header nav.main_menu ul li ul.drop_down_menu {
+header nav.main-menu ul li ul.drop-down-menu {
     top: 120%;
 }
 
-header nav.main_menu ul li ul.drop_down_menu a {
+header nav.main-menu ul li ul.drop-down-menu a {
     padding: 10px 25px;
     font-size: 13px;
     position: relative;
     z-index: 1;
 }
 
-header nav.main_menu ul li ul.drop_down_menu li:not(:last-child) a {
+header nav.main-menu ul li ul.drop-down-menu li:not(:last-child) a {
     border-bottom: 1px solid rgb(221, 221, 221);
 }
 
-header nav.main_menu ul li ul.drop_down_menu a::before {
+header nav.main-menu ul li ul.drop-down-menu a::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -280,18 +280,18 @@ header nav.main_menu ul li ul.drop_down_menu a::before {
     transition: transform 0.5s ease-in-out 0s;
 }
 
-header nav.main_menu ul li ul.drop_down_menu a:hover {
+header nav.main-menu ul li ul.drop-down-menu a:hover {
     color: var(--color-light, #ffffff);
     background-color: rgb(19, 83, 243);
 }
 
-header nav.main_menu ul li ul.drop_down_menu a:hover::before {
+header nav.main-menu ul li ul.drop-down-menu a:hover::before {
     transform-origin: left center;
     transform: scaleX(1);
     transition-delay: 0.1s;
 }
 
-header .form_and_btn form {
+header .form-and-btn form {
     background: var(--color-light, #fff);
     padding: 0.5rem 1rem 0.5rem 1.5rem;
     border-radius: 0.2rem;
@@ -299,31 +299,31 @@ header .form_and_btn form {
     border: 1px solid transparent;
 }
 
-header.sticky .form_and_btn form {
+header.sticky .form-and-btn form {
     background: var(--gray-color, #edeef3);
 }
 
-header .form_and_btn form:focus-within {
+header .form-and-btn form:focus-within {
     border-color: var(--primary-color, #455ef9);
 }
 
-header .form_and_btn form .shopping_cart_icon {
+header .form-and-btn form .shopping-cart-icon {
     width: 24px;
 }
 
-header .form_and_btn form .shopping_cart_icon path {
+header .form-and-btn form .shopping-cart-icon path {
     fill: transparent;
     stroke: rgb(0, 0, 0);
     stroke-width: 1.2px;
 }
 
-header .form_and_btn form button,
-.form_and_btn form input {
+header .form-and-btn form button,
+.form-and-btn form input {
     background: transparent;
     border: none;
 }
 
-header .form_and_btn form input {
+header .form-and-btn form input {
     padding: 5px 1rem;
     font-size: 14px;
     width: 100%;
@@ -331,7 +331,7 @@ header .form_and_btn form input {
     margin-right: 10px;
 }
 
-header .form_and_btn form .shopping_cart_and_label span {
+header .form-and-btn form .shopping-cart-and-label span {
     position: absolute;
     top: -7px;
     right: -11px;
@@ -415,7 +415,7 @@ header .toggle-btn.toggle span {
     width: 20px;
 }
 
-header a.try_free {
+header a.try-free {
     white-space: nowrap;
 }
 
@@ -430,7 +430,7 @@ header a.try_free {
 
 }
 
-#card .card_custom_shape img.circle {
+#card .card-custom-shape img.circle {
     top: 25%;
     left: 5%;
     animation: 5s linear 0s infinite alternate none running rotate;
@@ -446,17 +446,17 @@ header a.try_free {
     }
 }
 
-#card .card_custom_shape img.semicircle {
+#card .card-custom-shape img.semicircle {
     bottom: 14%;
     left: 0px;
 }
 
-#card .card_custom_shape img.dots {
+#card .card-custom-shape img.dots {
     right: 0px;
     bottom: 38%;
 }
 
-#card .article_wrapper {
+#card .article-wrapper {
     padding-top: 2rem;
 
 }
@@ -474,18 +474,18 @@ article.article h3 {
 
 }
 
-#card .article.banner_article p {
+#card .article.banner-article p {
     font-size: 1.2rem;
     padding-right: 8rem;
     margin-bottom: 2rem;
 }
 
-#card .card_thumb_wrapper .card_thumb_shapes img {
+#card .card-thumb-wrapper .card-thumb-shapes img {
     z-index: 1;
 
 }
 
-#card .card_thumb_wrapper .card_thumb_shapes img.dot-square {
+#card .card-thumb-wrapper .card-thumb-shapes img.dot-square {
     bottom: -3%;
     left: -5%;
     animation: 3s linear 0s infinite alternate none running upDown;
@@ -498,33 +498,33 @@ article.article h3 {
     }
 }
 
-#card .card_thumb_wrapper .card_thumb_shapes img.fill_circle {
+#card .card-thumb-wrapper .card-thumb-shapes img.fill-circle {
     top: -8%;
     right: 12%;
 }
 
-#card .card_thumb_wrapper img.stroke_circle {
+#card .card-thumb-wrapper img.stroke-circle {
     right: 0px;
     bottom: -15%;
 }
 
-#card .card_thumb_wrapper .card_big {
+#card .card-thumb-wrapper .card-big {
     margin-right: 1.8rem;
     position: relative;
     z-index: 1;
 }
 
-#card .card_thumb_wrapper .card_big figure {
+#card .card-thumb-wrapper .card-big figure {
     border-radius: 2.5rem 4px 2.5rem 4px;
     overflow: hidden;
 }
 
-#card .card_thumb_wrapper.small-img {
+#card .card-thumb-wrapper.small-img {
     width: 72%;
 
 }
 
-#card .card_thumb_wrapper .small-img figure {
+#card .card-thumb-wrapper .small-img figure {
     margin-top: 4rem;
     overflow: hidden;
     border-radius: 4px 2.5rem 4px 2.5rem;
@@ -532,7 +532,7 @@ article.article h3 {
     z-index: 1;
 }
 
-#card .card_thumb_wrapper .animation {
+#card .card-thumb-wrapper .animation {
     right: -58%;
     bottom: 13%;
     padding: 0.8rem 1.5rem;
@@ -573,12 +573,12 @@ article.article h3 {
     }
 }
 
-#card .card_thumb_wrapper .animation h4 {
+#card .card-thumb-wrapper .animation h4 {
     font-size: 1.05rem;
     font-weight: 600;
 }
 
-#card .card_thumb_wrapper .animation span {
+#card .card-thumb-wrapper .animation span {
     font-size: 15px;
 }
 
@@ -631,14 +631,14 @@ article.article h3 {
     }
 }
 
-#course a.view_all {
+#course a.view-all {
     background: var(--color-light, #fff);
     width: max-content;
     margin-right: 1.4rem;
     color: var(--bs-gray-600);
 }
 
-#course a.view_all i {
+#course a.view-all i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -653,26 +653,26 @@ article.article h3 {
     -o-transform: translateY(-50%);
 }
 
-#course a.view_all i:first-child {
+#course a.view-all i:first-child {
     right: 5px;
     z-index: -1;
     opacity: 0;
 }
 
-#course a.view_all i:last-child {
+#course a.view-all i:last-child {
     right: -10px;
 }
 
-#course a.view_all:hover {
+#course a.view-all:hover {
     color: var(--primary-color);
 }
 
-#course a.view_all:hover i:first-child {
+#course a.view-all:hover i:first-child {
     right: -14px;
     opacity: 1;
 }
 
-#course a.view_all:hover i:last-child {
+#course a.view-all:hover i:last-child {
     right: -1.5rem;
     opacity: 0;
 }
@@ -681,55 +681,55 @@ article.article h3 {
 
 
 
-#course .course_category {
+#course .course-category {
     border: 2px solid rgb(243, 243, 243);
     border-radius: 0.4rem;
     transition: all 0.3s ease-in-out 0s;
 }
 
-#course .course_category:hover {
+#course .course-category:hover {
     background: var(--primary-color);
     box-shadow: var(--shadow);
     border-color: var(--primary-color);
 }
 
-#course .course_category a {
+#course .course-category a {
     width: 100%;
     display: flex;
     align-items: center;
     padding-left: 1.5rem;
 }
 
-#course .course_category .category_icon {
+#course .course-category .category-icon {
     width: 40px;
     fill: rgb(43, 78, 255);
 }
 
-#course .course_category:hover .category_content * {
+#course .course-category:hover .category-content * {
     color: var(--color-light, #fff);
 }
 
-#course .course_category:hover .category_icon {
+#course .course-category:hover .category-icon {
     fill: var(--color-light, #fff);
 }
 
-#course .course_category .category_content h4 {
+#course .course-category .category-content h4 {
     margin: 0px;
     font-size: 1.2rem;
     color: var(--color);
     font-weight: 600;
 }
 
-#course .course_category .category_content {
+#course .course-category .category-content {
     padding-left: 2rem;
     padding-top: 1rem;
 }
 
-#course .course_category .category_content p {
+#course .course-category .category-content p {
     color: #555555;
 }
 
-#course .course_banner_item {
+#course .course-banner-item {
     margin-top: 6rem;
     padding: 30px 30px 20px;
     border: 1px solid rgb(221, 221, 221);
@@ -740,11 +740,11 @@ article.article h3 {
     background-size: cover;
 }
 
-#course .course_banner_content {
+#course .course-banner-content {
     width: 50%;
 }
 
-#course .course_banner_content span {
+#course .course-banner-content span {
     padding: 1px 15px;
     color: var(--color-light, #fff);
     font-size: 13px;
@@ -753,31 +753,31 @@ article.article h3 {
     background: var(--secondary-color, #fc4389);
 }
 
-#course .course_banner_content h3 {
+#course .course-banner-content h3 {
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-#course .course_banner_content a.try_free {
+#course .course-banner-content a.try-free {
     padding: 0.2rem 0.5rem;
     margin-top: 2rem;
 }
 
-#course .course_banner_item.one {
+#course .course-banner-item.one {
     background-image: url("../images/backroundimg1.jpg");
     margin-right: 0.5rem;
 }
 
-#course .course_banner_item.two {
+#course .course-banner-item.two {
     background-image: url("../images/backroundimg2.jpg");
     margin-left: 0.5rem;
 }
 
-#course .course_banner_item.two {
+#course .course-banner-item.two {
     padding: 2px 30px 0px;
 }
 
-#course .course_banner_item.two .course_banner_thumb {
+#course .course-banner-item.two .course-banner-thumb {
     width: 300px;
 }
 
@@ -795,26 +795,26 @@ article.article h3 {
     margin-top: 105px;
 }
 
-#coursemain .course_categories_filter_menu {
+#coursemain .course-categories-filter-menu {
     flex-wrap: wrap;
 }
 
-#coursemain .course_categories_filter_menu .li {
+#coursemain .course-categories-filter-menu .li {
     color: var(--color);
     cursor: pointer;
 
 }
 
-#coursemain .course_categories_filter_menu .li:not(:last-child) {
+#coursemain .course-categories-filter-menu .li:not(:last-child) {
     margin-right: 145px;
 }
 
-#coursemain .course_categories_filter_menu li.active,
-#coursemain .course_categories_filter_menu li:hover {
+#coursemain .course-categories-filter-menu li.active,
+#coursemain .course-categories-filter-menu li:hover {
     color: var(--primary-color, #2b4eff);
 }
 
-#coursemain .course_categories_filter_menu .li .span {
+#coursemain .course-categories-filter-menu .li .span {
     top: -115%;
     left: 80%;
     font-size: 13px;
@@ -825,7 +825,7 @@ article.article h3 {
     box-shadow: var(--shadow);
 }
 
-#coursemain .course_categories_filter_menu .li .span::before {
+#coursemain .course-categories-filter-menu .li .span::before {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -838,11 +838,11 @@ article.article h3 {
     border-color: var(--primary-color, #2b4eff) transparent transparent transparent;
 }
 
-#coursemain .course_card {
+#coursemain .course-card {
     transform-origin: bottom center;
 }
 
-#coursemain .course_card_item {
+#coursemain .course-card-item {
     background: rgb(255, 255, 255);
     border-radius: 0.5rem;
     overflow: hidden;
@@ -850,7 +850,7 @@ article.article h3 {
     box-shadow: var(--shadow);
 }
 
-#coursemain .course_card_item .course_card_header {
+#coursemain .course-card-item .course-card-header {
     overflow: hidden;
 }
 
@@ -886,7 +886,7 @@ article.article h3 {
     }
 }
 
-#coursemain .course_card_item:hover .course_card_header img {
+#coursemain .course-card-item:hover .course-card-header img {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -895,7 +895,7 @@ article.article h3 {
 
 }
 
-#coursemain .course_card_header img {
+#coursemain .course-card-header img {
     transition: all 0.3s ease-in-out 0s;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
@@ -904,39 +904,39 @@ article.article h3 {
 
 }
 
-#coursemain .course_card_header .course_tag {
+#coursemain .course-card-header .course-tag {
     top: 20px;
     left: 20px;
     color: rgb(255, 255, 255);
 }
 
-#coursemain .course_card_header .course_tag span {
+#coursemain .course-card-header .course-tag span {
     padding: 0px 5px;
     border-radius: 0.25rem;
     background: var(--primary-color, #2b4eff);
 }
 
-#coursemain .course_card_body,
-#coursemain .course_card_footer {
+#coursemain .course-card-body,
+#coursemain .course-card-footer {
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
-#coursemain .course_card_body {
+#coursemain .course-card-body {
     padding-top: 1.5rem;
     border-bottom: 1px solid rgb(235, 235, 235);
 }
 
-#coursemain .course_card_body .course_lesson_and_rating {
+#coursemain .course-card-body .course-lesson-and-rating {
     color: rgb(80, 79, 79);
     margin-bottom: 1rem;
 }
 
-#coursemain .course_card_body .course_lesson_and_rating i.fas.fa-star {
+#coursemain .course-card-body .course-lesson-and-rating i.fas.fa-star {
     color: #ff9c43;
 }
 
-#coursemain .course_card_body h3.course_name {
+#coursemain .course-card-body h3.course-name {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
 }
@@ -946,11 +946,11 @@ article.article h3 {
 }
 
 #coursemain a:hover,
-#coursemain h3.course_name:hover a {
+#coursemain h3.course-name:hover a {
     color: var(--primary-color, #2b4eff);
 }
 
-#coursemain .course_card_body .course_instructor figure {
+#coursemain .course-card-body .course-instructor figure {
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 0px;
@@ -960,31 +960,31 @@ article.article h3 {
     box-shadow: var(--shadow);
 }
 
-#coursemain .course_card_body .course_instructor {
+#coursemain .course-card-body .course-instructor {
     margin-bottom: 1rem;
 }
 
-#coursemain .course_card_body .instructor_name a {
+#coursemain .course-card-body .instructor-name a {
     color: rgb(68, 68, 68);
 }
 
-#coursemain .course_card_item .course_card_footer {
+#coursemain .course-card-item .course-card-footer {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
 }
 
-#coursemain .course_card_item .course_card_footer .current_amount {
+#coursemain .course-card-item .course-card-footer .current-amount {
     font-size: 1.2rem;
     color: var(--primary-color, #2b4eff);
     font-weight: bold;
     margin-left: 5px;
 }
 
-#coursemain .course_card_footer a.view_all i:last-child {
+#coursemain .course-card-footer a.view-all i:last-child {
     right: -19px;
 }
 
-#coursemain .course_card_footer a.view_all:hover i:first-child {
+#coursemain .course-card-footer a.view-all:hover i:first-child {
     right: -19px;
     z-index: 3;
 }
@@ -1032,7 +1032,7 @@ article.article h3 {
     }
 }
 
-#event .event_bg_shape {
+#event .event-bg-shape {
     left: 28%;
 }
 
@@ -1041,7 +1041,7 @@ article.article h3 {
     z-index: 2;
 }
 
-#event .event_item {
+#event .event-item {
     box-shadow: var(--shadow);
     padding: 2rem 2.2rem;
     border-radius: 0.5rem;
@@ -1049,7 +1049,7 @@ article.article h3 {
     background: var(--color-light, #fff);
 }
 
-#event .event_item:before {
+#event .event-item:before {
     content: "";
     position: absolute;
     top: auto;
@@ -1067,23 +1067,23 @@ article.article h3 {
     -o-transition: all 0.3s ease-in-out;
 }
 
-#event .event_item.fill::before,
-#event .event_item:hover::before {
+#event .event-item.fill::before,
+#event .event-item:hover::before {
     top: 5;
     bottom: auto;
     height: 100%;
 }
 
-#event .event_item .event_time_and_date {
+#event .event-item .event-time-and-date {
     font-size: 14px;
     color: #777;
 }
 
-#event .event_item .event_time_and_date span {
+#event .event-item .event-time-and-date span {
     padding-right: 8px;
 }
 
-#event .event_item .event_time_and_date span.br:before {
+#event .event-item .event-time-and-date span.br:before {
     content: "";
     position: absolute;
     top: 3px;
@@ -1093,25 +1093,25 @@ article.article h3 {
     background: #777;
 }
 
-#event .event_item h3.event_name {
+#event .event-item h3.event-name {
     font-size: 1.4rem;
     margin-top: 0.3rem;
     margin-bottom: 0;
 }
 
-#event .event_item h3.event_name:hover a {
+#event .event-item h3.event-name:hover a {
     color: var(--primary-color, #2b4eff);
 }
 
-#event .event_item a.view_all i:first-child {
+#event .event-item a.view-all i:first-child {
     z-index: 1;
 }
 
-#event .event_item a.view_all:hover i:first-child {
+#event .event-item a.view-all:hover i:first-child {
     right: -19px;
 }
 
-#event .event_item a.view_all i:last-child {
+#event .event-item a.view-all i:last-child {
     right: -19px;
 }
 
@@ -1125,7 +1125,7 @@ article.article h3 {
 #pricing .yellowbg {
     bottom: -6px;
     left: -6px;
-    z-index:1;
+    z-index: 1;
     animation: 3s linear 0s infinite normal none running yellowBg;
     margin-top: 45px;
     position: relative;
@@ -1172,7 +1172,7 @@ article.article h3 {
     border-radius: 0;
 }
 
-#pricing .pricing_card {
+#pricing .pricing-card {
     padding: 3rem;
     background: #e9edf7;
     width: 50%;
@@ -1180,35 +1180,35 @@ article.article h3 {
     border-radius: 0.5rem;
 }
 
-.pricing_cards.tab-content>.active {
+.pricing-cards.tab-content>.active {
     display: flex;
 }
 
-#pricing .pricing_card .pricing_card_header {
+#pricing .pricing-card .pricing-card-header {
     border-bottom: 1px solid #c3c3c3;
 }
 
-#pricing .pricing_card .pricing_card_header h4,
+#pricing .pricing-card .pricing-card-header h4,
 h3.price {
     font-weight: 600;
 }
 
-#pricing .pricing_card .pricing_card_header h3.price {
+#pricing .pricing-card .pricing-card-header h3.price {
     margin-bottom: 2rem;
     font-size: 3rem;
 }
 
-#pricing .pricing_card .pricing_card_header h3.price sub {
+#pricing .pricing-card .pricing-card-header h3.price sub {
     font-size: initial;
     font-weight: normal;
     margin-left: -1rem;
 }
 
-#pricing .pricing_card ul.pricing_card_featured {
+#pricing .pricing-card ul.pricing-card-featured {
     padding: 1.5rem 0 2.5rem;
 }
 
-#pricing .pricing_card ul.pricing_card_featured li {
+#pricing .pricing-card ul.pricing-card-featured li {
     margin: 0.5rem 0;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1217,24 +1217,24 @@ h3.price {
     -o-transition: all 0.3s ease-in-out;
 }
 
-#pricing .pricing_card ul.pricing_card_featured li:hover {
+#pricing .pricing-card ul.pricing-card-featured li:hover {
     color: #09c128;
 }
 
-#pricing .pricing_card ul.pricing_card_featured li i {
+#pricing .pricing-card ul.pricing-card-featured li i {
     color: #09c128;
     margin-right: 0.5rem;
 }
 
-#pricing .pricing_card.dimond a.try_free {
+#pricing .pricing-card.dimond a.try-free {
     background: transparent;
 }
 
-#pricing .pricing_card.dimond a.try_free:hover {
+#pricing .pricing-card.dimond a.try-free:hover {
     background: var(--primary-color, #2b4eff);
 }
 
-#pricing .pricing_card.dimond span.best_sell {
+#pricing .pricing-card.dimond span.best-sell {
     top: 5%;
     right: -3%;
     background: var(--secondary-color);
@@ -1243,7 +1243,7 @@ h3.price {
     border-radius: 0.3rem 0 0 0.3rem;
 }
 
-#pricing .pricing_card.dimond span.best_sell::after {
+#pricing .pricing-card.dimond span.best-sell::after {
     position: absolute;
     content: "";
     bottom: -10px;
@@ -1254,3 +1254,155 @@ h3.price {
     border-top: 0px solid transparent;
     border-bottom: 10px solid transparent;
 }
+
+
+
+#guide .own-guid-card {
+    padding: 2.5rem 5rem;
+    background: #2b4eff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: -5rem;
+    z-index: 3;
+}
+
+#guide .own-guid-card .own-card-content {
+    flex-wrap: wrap;
+}
+
+#guide .own-guid-card .cicle-shape {
+    right: -163px;
+    bottom: -90px;
+}
+
+#guide .own-guid-card h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--color-light, #fff);
+    font-weight: 600;
+    z-index: 3;
+}
+
+#guide .own-guid-card .btn {
+    z-index: 2;
+    background: var(--color-light, #fff);
+    padding: 1rem 2.5rem;
+}
+
+#guide .own-guid-card .btn:focus,
+#guide .own-guid-card .btn:hover {
+    box-shadow: var(--shadow);
+    color: var(--color, #0e1133);
+}
+
+
+footer {
+    padding-top: 13rem;
+    margin-top: -8rem;
+    background: var(--color);
+    color: var(--gray-color);
+  }
+  
+  footer p {
+    color: #b9b9b9;
+  }
+  
+  footer a.logo {
+    width: 120px;
+  }
+  
+  footer .icons a {
+    color: var(--gray-color);
+    font-size: 1.2rem;
+    margin: 0 5px;
+    background: var(--btn-color);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease-in-out;
+    outline: 2px solid var(--btn-color);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  
+  footer .icons a:hover {
+    outline-offset: 3px;
+  }
+  
+  footer h4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  ul.footer-menu li a {
+    margin: 0.2rem 0;
+    color: #b9b9b9;
+  }
+  
+  ul.footer-menu li a:hover {
+    color: var(--color-light, #fff);
+  }
+  
+  footer .footer-bottom {
+    padding: 5px 0;
+    font-size: 13px;
+    border-top: 1px solid #1c1f3f;
+  }
+  
+  footer .footer-bottom a {
+    color: var(--color-light, #fff);
+  }
+  
+  footer form input[type="email"] {
+    padding: 20px 14px;
+    border: none;
+    font-size: 15px;
+    width: 70%;
+    border-radius: 0.3rem 0 0 0.3rem;
+  }
+  
+  footer form button {
+    width: 20%;
+    border: none;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: #2b4eff;
+    border-radius: 0 0.3rem 0.3rem 0;
+  }
+  
+  footer form button i {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  
+  footer form button i:first-child {
+    left: 0;
+    opacity: 0;
+  }
+  
+  footer form button:hover i:first-child {
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  
+  footer form button:hover i:last-child {
+    opacity: 0;
+  }
+  
+  footer .con-mt {
+    margin-top: calc(2rem / var(--i, 0));
+  }
+
