@@ -277,12 +277,12 @@ header nav.main-menu ul li ul.drop-down-menu a::before {
     background: var(--primary-color);
     transform-origin: right center;
     transform: scaleX(0);
-    transition: transform 0.3s ease-in-out 0s;
+    transition: transform 0.5s ease-in-out 0s;
 }
 
 header nav.main-menu ul li ul.drop-down-menu a:hover {
     color: var(--color-light, #ffffff);
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(19, 83, 243);
 }
 
 header nav.main-menu ul li ul.drop-down-menu a:hover::before {
